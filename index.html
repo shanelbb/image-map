@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Image Map</h1>
+        <h2>Parts of an Acoustic Guitar</h2>
+    </header>
+    <main>
+        <p class="instructions">Click on areas of the guitar to learn more information.</p>
+        <div class="image">
+            <img src="./assets/guitar.jpg" alt="An acoustic guitar." usemap="#workmap">
+            <map name="workmap">
+                <area shape="rectangle" coords="189,35,232,137" alt="headstock" href="./parts/headstock.html">
+                <area shape="circle" coords="173,67, 40" alt="tuning key" href="./parts/tuning-key.html">
+                <area shape="circle" coords="254,68, 40" alt="tuning key" href="./parts/tuning-key.html">
+                <area shape="circle" coords="175,101, 40" alt="tuning key" href="./parts/tuning-key.html">
+                <area shape="circle" coords="255,106, 40" alt="tuning key" href="./parts/tuning-key.html">
+                <area shape="rectangle" coords="193, 139, 235, 153" alt="nut" href="./parts/nut.html">
+                <area shape="rectangle" coords="200,158,236,233" alt="neck" href="./parts/neck.html">
+                <area shape="rectangle" coords="209,238,225,367" alt="position markers" href="./parts/position-markers.html">
+                <area shape="rectangle" coords="193,368,236,436" alt="fret-board" href="./parts/fretboard.html">
+                <area shape="circle" coords="209,469, 45" alt="sound hole" href="./parts/sound-hole.html">
+                <area shape="rectangle" coords="190,524,237,557" alt="strings" href="./parts/strings.html">
+                <area shape="rectangle" coords="167,568,255,599" alt="bridge" href="./parts/bridge.html">
+                <area shape="rectangle" coords="137,405,176,562" alt="body" href="./parts/body.html">
+                <area shape="rectangle" coords="291,391,248,561" alt="body" href="./parts/body.html">
+                <area shape="rectangle" coords="90,604,302,675" alt="body" href="./parts/body.html">
+              </map>
+        </div>
+    </main>
+</body>
+</html>
