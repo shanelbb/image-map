@@ -17,8 +17,8 @@
         <div class="image">
             <img src="./assets/guitar.jpg" alt="An acoustic guitar." usemap="#workmap">
             <map name="workmap">
-                <area shape="rectangle" coords="189,35,232,137" alt="headstock" href="./parts/headstock.html">
-                <area shape="circle" coords="173,67, 40" alt="tuning key" href="./parts/tuning-key.html">
+                <area shape="rectangle" coords="189,35,232,137" alt="headstock" href="./parts/headstock.html" touchstart="touchMap(0)">
+                <area shape="circle" coords="173,67, 40" alt="tuning key" href="./parts/tuning-key.html" touchstart="touchMap(1)">
                 <area shape="circle" coords="254,68, 40" alt="tuning key" href="./parts/tuning-key.html">
                 <area shape="circle" coords="175,101, 40" alt="tuning key" href="./parts/tuning-key.html">
                 <area shape="circle" coords="255,106, 40" alt="tuning key" href="./parts/tuning-key.html">
@@ -35,5 +35,11 @@
               </map>
         </div>
     </main>
+    <script type="text/javascript">
+        let area = document.getElementsByTagName('area')
+       function touchMap(item) {
+          window.open(area[item].href)
+       }
+    </script>
 </body>
 </html>
